@@ -1,0 +1,1186 @@
+body,
+.body {
+    font-family: "Nunito Sans", "Arial", sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.landingpage-listing {
+    margin: 0;
+    font-family: "Arial", sans-serif !important;
+    font-size: 35pt;
+    line-height: 1.25;
+    color: #f0f6f8;
+}
+
+.listing {
+    overflow-x: hidden;
+    padding: 3rem 0;
+}
+
+.landingpage-listing h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 10px 0;
+}
+
+.landingpage-listing .image-responsive {
+    width: 100%;
+    max-width: 605px;
+}
+
+/*------------------------------GENERAL------------------------------*/
+/*----------DISPLAY----------*/
+
+.landingpage-listing .display-block {
+    display: block;
+}
+
+.landingpage-listing .display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*----------FLEXBOX----------*/
+
+.landingpage-listing .align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.landingpage-listing .justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*----------MARGIN----------*/
+
+
+.mb-pt {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.landingpage-listing .margin-y-small {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.landingpage-listing .margin-y-normal {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.landingpage-listing .margin-y-wide {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.landingpage-listing .margin-y-widest {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.landingpage-listing .margin-t-small {
+    margin-top: 0.5rem;
+}
+
+.landingpage-listing .margin-t-normal {
+    margin-top: 1rem;
+}
+
+.landingpage-listing .margin-t-wide {
+    margin-top: 1.5rem;
+}
+
+.landingpage-listing .margin-t-widest {
+    margin-top: 2.5rem;
+}
+
+.landingpage-listing .margin-t-middle {
+    margin-top: 3.5rem;
+}
+
+.landingpage-listing .margin-b-small {
+    margin-bottom: 0.5rem;
+}
+
+.landingpage-listing .margin-b-normal {
+    margin-bottom: 1rem;
+}
+
+.landingpage-listing .margin-b-wide {
+    margin-bottom: 1.5rem;
+}
+
+.landingpage-listing .margin-b-widest {
+    margin-bottom: 2.5rem;
+}
+
+.landingpage-listing .margin-b-large {
+    margin-bottom: 3.5rem;
+}
+
+.landingpage-listing .margin-b-largest {
+    margin-bottom: 5rem;
+}
+
+.landingpage-listing .margin-x-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landingpage-listing .margin-x-small {
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+}
+
+.landingpage-listing .margin-x-0 {
+    margin-top: 0;
+}
+
+
+
+.image-line-height {
+    line-height: 37px;
+}
+
+/*----------FONT SIZE----------*/
+
+.landingpage-listing .font-size-110 {
+    font-size: 110pt;
+}
+
+.landingpage-listing .font-size-90 {
+    font-size: 90pt;
+}
+
+.landingpage-listing .font-size-77 {
+    font-size: 77pt;
+}
+
+.landingpage-listing .font-size-60 {
+    font-size: 60pt;
+}
+
+.landingpage-listing .font-size-56 {
+    font-size: 56pt;
+}
+
+.landingpage-listing .font-size-54 {
+    font-size: 54pt;
+}
+
+.landingpage-listing .font-size-50 {
+    font-size: 50pt;
+}
+
+.landingpage-listing .font-size-45 {
+    font-size: 45pt;
+}
+
+.landingpage-listing .font-size-46 {
+    font-size: 46pt;
+}
+
+.landingpage-listing .font-size-40 {
+    font-size: 40pt;
+}
+
+.landingpage-listing .font-size-41 {
+    font-size: 41pt;
+}
+
+.landingpage-listing .font-size-37 {
+    font-size: 37pt;
+}
+
+.landingpage-listing .font-size-35 {
+    font-size: 35pt;
+}
+
+.landingpage-listing .font-size-34 {
+    font-size: 34pt;
+}
+
+.landingpage-listing .font-size-30 {
+    font-size: 30pt;
+}
+
+.landingpage-listing .font-size-32 {
+    font-size: 32pt;
+}
+
+.landingpage-listing .font-size-33 {
+    font-size: 33pt;
+}
+
+.landingpage-listing .font-size-29 {
+    font-size: 29pt;
+}
+
+.landingpage-listing .font-size-27 {
+    font-size: 27pt;
+}
+
+.landingpage-listing .font-size-26 {
+    font-size: 26pt;
+}
+
+.landingpage-listing .font-size-25 {
+    font-size: 25pt;
+}
+
+.landingpage-listing .font-size-23 {
+    font-size: 23pt;
+}
+
+.landingpage-listing .font-size-24 {
+    font-size: 24pt;
+}
+
+.landingpage-listing .font-size-22 {
+    font-size: 22pt;
+}
+
+.landingpage-listing .font-size-21 {
+    font-size: 21.75pt;
+}
+
+.landingpage-listing .font-size-20 {
+    font-size: 20pt;
+}
+
+.landingpage-listing .font-size-18 {
+    font-size: 18pt;
+}
+
+.landingpage-listing .font-size-17 {
+    font-size: 17pt;
+}
+
+.landingpage-listing .font-size-15 {
+    font-size: 15pt;
+}
+
+.landingpage-listing .font-size-13 {
+    font-size: 13pt;
+}
+
+.landingpage-listing .color-octonary-dark {
+    color: #2f62b1;
+}
+
+/*----------FONT WEIGHT----------*/
+
+.landingpage-listing .font-black {
+    font-weight: 900;
+}
+
+.landingpage-listing .font-bold {
+    font-weight: 700;
+}
+
+.landingpage-listing .font-semibold {
+    font-weight: 600;
+}
+
+.landingpage-listing .font-medium {
+    font-weight: 500;
+}
+
+.landingpage-listing .font-regular {
+    font-weight: 400;
+}
+
+.landingpage-listing .font-light {
+    font-weight: 300;
+}
+
+/*----------LINE HEIGHT----------*/
+
+.landingpage-listing .line-height-smallest {
+    line-height: 1;
+}
+
+.landingpage-listing .line-height-small {
+    line-height: 1.25;
+}
+
+.landingpage-listing .line-height-normal {
+    line-height: 1.5;
+}
+
+.landingpage-listing .line-height-wide {
+    line-height: 1.75;
+}
+
+.landingpage-listing .line-height-widest {
+    line-height: 2;
+}
+
+/*---------FONT STYLE----------*/
+
+.landingpage-listing .font-style-italic {
+    font-style: italic;
+}
+
+/*----------TEXT TRANSFORM----------*/
+
+.landingpage-listing .text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+/*----------TEXT ALIGN----------*/
+
+.landingpage-listing .text-center {
+    text-align: center;
+}
+
+.landingpage-listing .text-left {
+    text-align: left;
+}
+
+.landingpage-listing .text-right {
+    text-align: right;
+}
+
+/*------------------------------THEME------------------------------*/
+
+/*----------COLOR - THEME----------*/
+
+.landingpage-listing .color-primary {
+    color: #3371a2;
+}
+
+.landingpage-listing .color-secondary {
+    color: #3d839f;
+}
+
+.landingpage-listing .color-tertiary {
+    color: #6190ca;
+}
+
+.landingpage-listing .color-quarter {
+    color: #5e7ecc;
+}
+
+.landingpage-listing .color-quinary {
+    color: #84a7c5;
+}
+
+.landingpage-listing .color-senary {
+    color: #356992;
+}
+
+.landingpage-listing .color-septenary {
+    color: #84a7c5;
+}
+
+.landingpage-listing .color-octonary {
+    color: #4263a1;
+}
+
+.landingpage-listing .color-nonary {
+    color: #285b86;
+}
+
+.landingpage-listing .color-grey-medium {
+    color: #1172c0;
+}
+
+.landingpage-listing .color-grey-light-t {
+    color: #87c1d9;
+}
+
+.landingpage-listing .color-grey-similer {
+    color: #003c75;
+}
+
+.landingpage-listing .color-grey-white {
+    color: #79819f;
+}
+
+.landingpage-listing .color-grey-red-light {
+    color: #d76159;
+}
+
+.landingpage-listing .color-grey-blue-dark {
+    color: #104669;
+}
+
+.landingpage-listing .color-grey-blue-dark-b {
+    color: #375e93;
+}
+
+.landingpage-listing .color-grey-blue-s-light {
+    color: #4263A1;
+}
+
+.landingpage-listing .color-dark-t-white {
+    color: #5f6c7d;
+}
+
+/*----------COLOR - BASE----------*/
+.landingpage-listing .color-black {
+    color: #54647e;
+}
+
+.landingpage-listing .color-grey {
+    color: #3a4f61;
+}
+
+.landingpage-listing .color-grey-soft {
+    color: #979797;
+}
+
+.landingpage-listing .color-grey-light {
+    color: #6a817e;
+}
+
+.landingpage-listing .color-blue {
+    color: #124476;
+}
+
+.landingpage-listing .color-purple {
+    color: #4c0094;
+}
+
+.landingpage-listing .color-1 {
+    color: #0C3C74;
+    display: block;
+}
+
+.landingpage-listing .color_230 {
+    color: #124476;
+}
+
+.landingpage-listing .color_101 {
+    color: #4E5D79;
+}
+
+.landingpage-listing .color_102 {
+    color: #3B63A9;
+}
+
+.landingpage-listing .color_103 {
+    color: #6D85AB;
+}
+
+.line_heite_ht {
+    line-height: 0.7;
+}
+
+.landingpage-listing .color_104 {
+    color: #B6BDC8;
+}
+
+.landingpage-listing .color_105 {
+    color: #9DA4AA;
+    margin-top: 0px;
+    line-height: 0.8;
+}
+
+.margin_t_ctimage {
+    margin-top: 70px;
+}
+
+.landingpage-listing .color_200 {
+    color: #cfd9e9;
+    margin: 0;
+}
+
+.landingpage-listing .border_bottom_hight {
+    border-bottom: 2px solid #BAC3D0;
+    display: inline-block;
+    padding-bottom: 9px;
+}
+
+.landingpage-listing .border_bottom_hight_2 {
+    border-bottom: 4px solid #CFD9E9;
+    display: inline-block;
+    padding-bottom: 9px;
+}
+
+.landingpage-listing .border_bottom_hight_3 {
+    border-bottom: 4px solid #CFD9E9;
+    display: inherit;
+    padding-bottom: 20px;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+}
+
+.landingpage-listing .border_bottom_hight_4 {
+    border-bottom: 4px solid #CFD9E9;
+    display: inherit;
+    padding-bottom: 13px;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+}
+
+.landingpage-listing .border_bottom_hight_5 {
+    border-bottom: 4px solid #CFD9E9;
+    display: inherit;
+    padding-bottom: 6px;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    border-top: 4px solid #CFD9E9;
+    padding-top: 2px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.landingpage-listing .border_bottom_hight_6 {
+    border-bottom: 4px solid #CFD9E9;
+    display: inherit;
+    padding-bottom: 4px;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    border-top: 4px solid #CFD9E9;
+    padding-top: 2px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.mb_00 {
+    margin-bottom: 0;
+}
+
+.landingpage-listing .color_476294 {
+    color: #476294;
+}
+
+
+
+.ct_class_linehite {
+    line-height: 1;
+    font-size: 55pt !important;
+}
+
+.landingpage-listing .color_929AA5 {
+    color: #929AA5;
+}
+
+.line-height___1 {
+    line-height: 0;
+}
+
+.mt-200 {
+    margin-top: 20px;
+}
+
+
+.table_box {
+    max-width: 605px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(2) {
+    text-align: center;
+    width: 44px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(2) {
+    text-align: center;
+    width: 44px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(3)>td:nth-child(2) {
+    text-align: center;
+    width: 44px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(4)>td:nth-child(2) {
+    text-align: center;
+    width: 44px;
+}
+
+
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(3) {
+    text-align: left;
+    font-size: 29px;
+    padding: 5px 15px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(3) {
+    text-align: left;
+    font-size: 29px;
+    padding: 5px 15px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(3)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(3)>td:nth-child(3) {
+    text-align: left;
+    font-size: 29px;
+    padding: 5px 15px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(4)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(4)>td:nth-child(3) {
+    text-align: left;
+    font-size: 29px;
+    padding: 5px 15px;
+}
+
+
+
+
+.table_box.margin-t-widest>table>tbody>tr td span {
+    color: #5F686F;
+}
+
+.landingpage-listing .color_607A95 {
+    color: #607A95;
+}
+
+.landingpage-listing .color_58E {
+    color: #46558E;
+}
+
+.landingpage-listing .color_77A {
+    color: #4E577A;
+}
+
+
+.border_top_clsss {
+    margin-top: 0;
+    border-top: 1px solid #9BA6B0;
+    display: inline-block;
+}
+
+.border_top_clsss_2 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 0.25 !important;
+    padding-top: 0.6em;
+}
+
+.landingpage-listing .color_460 {
+    color: #3A4F61;
+}
+
+.landingpage-listing .color_751 {
+    color: #665751;
+}
+
+/* NEw style Css  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landingpage-listing .dot_color {
+    color: #9BA6B0;
+}
+
+.bodrder_st_sm {
+    border-top: 3px solid #9BA6B0;
+    width: 275px;
+    margin: auto;
+    padding-top: 0.4em;
+    margin-top: 0.8em;
+}
+
+.bodrder_st_sm_2 {
+    border-top: 3px solid #9BA6B0;
+    width: 308px;
+    margin: auto;
+    padding-top: 0.3em;
+    margin-top: 0.7em;
+}
+
+.c_class_regular.font-size-30.color_460 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.color_460_margin_s {
+    margin: 3px 0 !important;
+}
+
+.landingpage-listing .dot_color_2 {
+    background-color: #A9B5C0;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 13px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.landingpage-listing .color_575 {
+    color: #767575;
+    margin: 0 !important;
+}
+
+.landingpage-listing .color_050 {
+    color: #505050;
+}
+
+h2.mb_0_0_0 {
+    margin-bottom: 0 !important;
+}
+
+h2.mb_0_0_0_t {
+    margin-top: 0 !important;
+}
+
+.landingpage-listing .color_2AD {
+    color: #4263A1;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.c_t_clss_t {
+    margin: 0;
+    margin-top: 15px;
+}
+
+
+
+.landingpage-listing .font-size-15 {
+    font-size: 15pt;
+}
+
+.new_class_image {
+    max-width: 225px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.c_class {
+    font-family: 'Verdana';
+    font-weight: 700;
+}
+
+.c_class_regular {
+    font-family: 'Verdana';
+    font-weight: 400;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.landingpage-listing .border-top-small-S {
+    border-top: 4px solid #c5e4fb;
+    max-width: 78px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+/*----------BACKGROUND----------*/
+.landingpage-listing .bg-color-primary {
+    background-color: #f0f6f8;
+}
+
+/*----------------Custom Css -----------*/
+.landingpage-listing .page {
+    margin: 0px 15px;
+}
+
+.list_sct .color-22.font-size-25.m-0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 89px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: left;
+    margin: auto;
+}
+
+.list_sct .color-22.font-size-25.m-0 span {
+    width: 27px;
+}
+
+.list_sct .color-22.font-size-25.m-0 small {
+    width: 17px;
+    text-align: center;
+}
+
+
+
+
+/*----------DIVIDER - TITLE----------*/
+
+.landingpage-listing .title-divider-primary {
+    display: inline-block;
+    padding: 0.1rem 1rem;
+    border: 4px solid #A9BEDF;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.landingpage-listing .title-divider-secondary {
+    display: inline-block;
+    padding: 0.5rem 0;
+    border-bottom: 5px solid #ddeafa;
+}
+
+.landingpage-listing .border-top {
+    border-top: 5px solid #dceffe;
+    max-width: 487px;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.landingpage-listing .border-top-small {
+    border-top: 4px solid #c5e4fb;
+    max-width: 382px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.landingpage-listing .border-top-big {
+    border-top: 5px solid #dceffe;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+
+/*----------DIVIDER - SUBTITLE----------*/
+.landingpage-listing .subtitle-divider-primary {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 10px solid #e5edf5;
+}
+
+/*----------DIVIDER - DESC----------*/
+.landingpage-listing .desc-divider-primary {
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border: 7px solid #ddeafa;
+}
+
+/*----------DIVIDER - WRAPPER----------*/
+.landingpage-listing .wrapper-divider-primary:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin: 3rem auto;
+    background-color: #ddeafa;
+    border-radius: 100%;
+}
+
+.landingpage-listing .wrapper-divider-secondary:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: "";
+    width: 400px;
+    height: 5px;
+    margin: 2.25rem auto;
+    background-color: #ddeafa;
+}
+
+.m-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/*----------TABLE----------*/
+.landingpage-listing table {
+    font-family: "Nunito Sans", "Arial", sans-serif !important;
+    font-size: 25pt;
+    font-weight: 200;
+    color: #152E66;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+@media (min-width: 1100px) {
+    .landingpage-listing table {
+        width: 52.5%;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .landingpage-listing table {
+        width: 60%;
+    }
+}
+
+@media (max-width: 875px) {
+    .landingpage-listing table {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .landingpage-listing .font-size-60 {
+        font-size: 32pt;
+    }
+
+    .landingpage-listing .font-size-22 {
+        font-size: 17pt;
+    }
+
+    .landingpage-listing .font-size-24 {
+        font-size: 20pt;
+    }
+
+
+    .landingpage-listing .font-size-50 {
+        font-size: 32pt;
+    }
+
+    .landingpage-listing .margin-b-large {
+        margin-bottom: 0.5rem;
+    }
+
+    .landingpage-listing .font-size-25 {
+        font-size: 22pt;
+    }
+
+    .landingpage-listing .font-size-29 {
+        font-size: 25pt;
+    }
+
+    .landingpage-listing .font-size-35 {
+        font-size: 35pt;
+    }
+
+    .landingpage-listing .font-size-40 {
+        font-size: 26pt;
+    }
+
+    .landingpage-listing .font-size-28 {
+        font-size: 20pt;
+    }
+
+    .landingpage-listing .font-size-35 {
+        font-size: 29pt;
+    }
+
+    .landingpage-listing .font-size-30 {
+        font-size: 24pt;
+    }
+
+    .landingpage-listing .font-size-35 {
+        font-size: 24pt;
+    }
+
+
+    .new_class_image {
+        max-width: 225px;
+    }
+
+    .landingpage-listing .font-size-45 {
+        font-size: 26pt;
+    }
+
+    .landingpage-listing h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 6px 0;
+    }
+
+    .landingpage-listing .font-size-33 {
+        font-size: 21pt;
+    }
+
+    .landingpage-listing .font-size-41 {
+        font-size: 30pt;
+    }
+
+    .landingpage-listing .font-size-20 {
+        font-size: 16pt;
+    }
+
+    .landingpage-listing .font-size-54 {
+        font-size: 52pt;
+    }
+
+    .landingpage-listing .font-size-46 {
+        font-size: 37pt;
+    }
+
+    .landingpage-listing .font-size-32 {
+        font-size: 23pt;
+    }
+
+    .ct_class_linehite {
+        line-height: 1;
+        font-size: 37pt !important;
+    }
+
+    .landingpage-listing .margin-b-largest {
+        margin-bottom: 3rem;
+    }
+
+    .landingpage-listing .font-size-56 {
+        font-size: 34pt;
+    }
+
+
+    .table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(1),
+    .table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(3) {
+        text-align: left;
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+    .table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(1),
+    .table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(3) {
+        text-align: left;
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+
+}
+
+
+.landingpage-listing table tbody tr td {
+    border: 2px solid #6A6A6A;
+    background-color: #FFF;
+}
+
+/* .landingpage-listing table tbody tr td>span {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+padding: 0.15rem 0;
+}
+
+.landingpage-listing table tbody tr td>span>span {
+display: inline-block;
+margin: 0 0.5rem;
+}*/
+
+/*----------TABLE - TBODY - TR----------*/
+
+/*        .landingpage-listing table tbody tr:first-child td {
+background-color: transparent;
+}*/
+
+/*----------TABLE - TBODY - TD - FIRST----------*/
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(1) {
+    width: 4rem;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(2) {
+    text-align: center;
+    width: 2.75rem;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(3) {
+    text-align: center;
+    width: 1.25rem;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(4) {
+    width: 1.5rem;
+    margin-right: 0;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(5) {
+    text-align: right;
+    width: 6.5rem;
+    margin-left: 0;
+}
+
+/*----------TABLE - TBODY - TD - SECOND----------*/
+
+.landingpage-listing table tbody tr td.td-second>span {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+/*----------TABLE - TBODY - TD - THIRD----------*/
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(1) {
+    width: 4.5rem;
+}
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(2) {
+    width: 1.25rem;
+    margin-right: 0;
+}
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(3) {
+    text-align: right;
+    width: 5.5rem;
+    margin-left: 0;
+}
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(4) {
+    text-align: left;
+    width: 6.5rem;
+}
+
