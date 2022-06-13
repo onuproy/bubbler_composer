@@ -129,6 +129,9 @@ p {
 .landingpage-listing .margin-b-widest {
     margin-bottom: 2.5rem;
 }
+.landingpage-listing .margin-b-middle {
+    margin-bottom: 3rem;
+}
 
 .landingpage-listing .margin-b-large {
     margin-bottom: 3.5rem;
@@ -515,14 +518,7 @@ p {
     padding-bottom: 9px;
 }
 
-.landingpage-listing .border_bottom_hight_3 {
-    border-bottom: 4px solid #CFD9E9;
-    display: inherit;
-    padding-bottom: 20px;
-    width: max-content;
-    text-align: center;
-    margin: auto;
-}
+
 
 .landingpage-listing .border_bottom_hight_4 {
     border-bottom: 4px solid #CFD9E9;
@@ -701,13 +697,71 @@ p {
 .landingpage-listing .color_60872B {
     color: #60872B;
 }
+.landingpage-listing .color_339570 {
+    color: #339570;
+}
+.landingpage-listing .color_62af35 {
+    color: #62af35;
+}
+.landingpage-listing .color_389673 {
+    color: #389673;
+}
+.landingpage-listing .color_427630 {
+    color: #427630;
+}
+.landingpage-listing .color_597089 {
+    color: #597089;
+}
+.landingpage-listing .color_ea7fbf {
+    color: #ea7fbf;
+}
+.landingpage-listing .color_ee6b62 {
+    color: #ee6b62;
+}
+
+.landingpage-listing .color_7a776a {
+    color: #7a776a;
+}
+.landingpage-listing .color_706666 {
+    color: #706666;
+}
+.landingpage-listing .color_716767 {
+    color: #716767;
+}
+.landingpage-listing .color_8db279 {
+    color: #8db279;
+}
+.landingpage-listing .color_24507d {
+    color: #24507d;
+}
+.landingpage-listing .color_6d4d2f {
+    color: #6d4d2f;
+}
+.landingpage-listing .color_3a4b79 {
+    color: #3a4b79;
+}
 
 
 
 
 /* NEw style Css  */
 
-
+.border_dafult {
+    border-bottom: 3px solid #CEDADD;
+    padding-bottom: 20px;
+    width: 135px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.border_dafult_big {
+    border-bottom: 5px solid #CEDADD;
+    padding-bottom: 20px;
+    width: 370px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 
 
