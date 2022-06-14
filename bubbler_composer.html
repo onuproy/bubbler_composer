@@ -3,482 +3,1727 @@
 <html>
 
 <head>
-    <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
-        rel="stylesheet">
+<!-- Meta -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+rel="stylesheet">
 
-    <link rel="stylesheet" href="https://silverfinger.com/eBay/fonts/fonts.css">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://silverfinger.com/eBay/fonts/fonts.css">
+
+<style>
+body,
+.body {
+font-family: "Nunito Sans", "Arial", sans-serif !important;
+margin: 0;
+padding: 0;
+}
+
+* {
+padding: 0;
+margin: 0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.landingpage-listing {
+margin: 0;
+font-family: "Arial", sans-serif !important;
+font-size: 35pt;
+line-height: 1.25;
+color: #f0f6f8;
+}
+
+.listing {
+overflow-x: hidden;
+padding: 3rem 0;
+}
+
+.landingpage-listing h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 10px 0;
+}
+
+.landingpage-listing .image-responsive {
+width: 100%;
+max-width: 605px;
+}
+
+/*------------------------------GENERAL------------------------------*/
+/*----------DISPLAY----------*/
+
+.landingpage-listing .display-block {
+display: block;
+}
+
+.landingpage-listing .display-flex {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+/*----------FLEXBOX----------*/
+
+.landingpage-listing .align-items-center {
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+
+.landingpage-listing .justify-content-center {
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+
+/*----------MARGIN----------*/
+
+
+.mb-pt {
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+.landingpage-listing .margin-y-small {
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+.landingpage-listing .margin-y-normal {
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.landingpage-listing .margin-y-wide {
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.landingpage-listing .margin-y-widest {
+margin-top: 2.5rem;
+margin-bottom: 2.5rem;
+}
+
+.landingpage-listing .margin-t-small {
+margin-top: 0.5rem;
+}
+
+.landingpage-listing .margin-t-normal {
+margin-top: 1rem;
+}
+
+.landingpage-listing .margin-t-wide {
+margin-top: 1.5rem;
+}
+
+.landingpage-listing .margin-t-widest {
+margin-top: 2.5rem;
+}
+
+.landingpage-listing .margin-t-middle {
+margin-top: 3.5rem;
+}
+
+.landingpage-listing .margin-b-small {
+margin-bottom: 0.5rem;
+}
+
+.landingpage-listing .margin-b-normal {
+margin-bottom: 1rem;
+}
+
+.landingpage-listing .margin-b-wide {
+margin-bottom: 1.5rem;
+}
+
+.landingpage-listing .margin-b-widest {
+margin-bottom: 2.5rem;
+}
+.landingpage-listing .margin-b-middle {
+margin-bottom: 3rem;
+}
+
+.landingpage-listing .margin-b-large {
+margin-bottom: 3.5rem;
+}
+
+.landingpage-listing .margin-b-largest {
+margin-bottom: 5rem;
+}
+
+.landingpage-listing .margin-x-auto {
+margin-left: auto;
+margin-right: auto;
+}
+
+.landingpage-listing .margin-x-small {
+margin-left: 1.0rem;
+margin-right: 1.0rem;
+}
+
+.landingpage-listing .margin-x-0 {
+margin-top: 0;
+}
+
+
+
+.image-line-height {
+line-height: 37px;
+}
+
+/*----------FONT SIZE----------*/
+
+.landingpage-listing .font-size-110 {
+font-size: 110pt;
+}
+
+.landingpage-listing .font-size-90 {
+font-size: 90pt;
+}
+
+.landingpage-listing .font-size-77 {
+font-size: 77pt;
+}
+
+.landingpage-listing .font-size-60 {
+font-size: 60pt;
+}
+
+.landingpage-listing .font-size-56 {
+font-size: 56pt;
+}
+
+.landingpage-listing .font-size-54 {
+font-size: 54pt;
+}
+
+.landingpage-listing .font-size-50 {
+font-size: 50pt;
+}
+
+.landingpage-listing .font-size-45 {
+font-size: 45pt;
+}
+
+.landingpage-listing .font-size-46 {
+font-size: 46pt;
+}
+
+.landingpage-listing .font-size-40 {
+font-size: 40pt;
+}
+
+.landingpage-listing .font-size-41 {
+font-size: 41pt;
+}
+
+.landingpage-listing .font-size-37 {
+font-size: 37pt;
+}
+
+.landingpage-listing .font-size-35 {
+font-size: 35pt;
+}
+
+.landingpage-listing .font-size-34 {
+font-size: 34pt;
+}
+
+.landingpage-listing .font-size-30 {
+font-size: 30pt;
+}
+
+.landingpage-listing .font-size-32 {
+font-size: 32pt;
+}
+
+.landingpage-listing .font-size-33 {
+font-size: 33pt;
+}
+
+.landingpage-listing .font-size-29 {
+font-size: 29pt;
+}
+
+.landingpage-listing .font-size-27 {
+font-size: 27pt;
+}
+
+.landingpage-listing .font-size-26 {
+font-size: 26pt;
+}
+
+.landingpage-listing .font-size-25 {
+font-size: 25pt;
+}
+
+.landingpage-listing .font-size-23 {
+font-size: 23pt;
+}
+
+.landingpage-listing .font-size-24 {
+font-size: 24pt;
+}
+
+.landingpage-listing .font-size-22 {
+font-size: 22pt;
+}
+
+.landingpage-listing .font-size-21 {
+font-size: 21.75pt;
+}
+
+.landingpage-listing .font-size-20 {
+font-size: 20pt;
+}
+.landingpage-listing .font-size-20px {
+font-size: 20px;
+}
+.landingpage-listing .font-size-18 {
+font-size: 18pt;
+}
+
+.landingpage-listing .font-size-17 {
+font-size: 17pt;
+}
+
+.landingpage-listing .font-size-15 {
+font-size: 15pt;
+}
+
+.landingpage-listing .font-size-13 {
+font-size: 13pt;
+}
+
+.landingpage-listing .color-octonary-dark {
+color: #2f62b1;
+}
+
+/*----------FONT WEIGHT----------*/
+
+.landingpage-listing .font-black {
+font-weight: 900;
+}
+
+.landingpage-listing .font-bold {
+font-weight: 700;
+}
+
+.landingpage-listing .font-semibold {
+font-weight: 600;
+}
+
+.landingpage-listing .font-medium {
+font-weight: 500;
+}
+
+.landingpage-listing .font-regular {
+font-weight: 400;
+}
+
+.landingpage-listing .font-light {
+font-weight: 300;
+}
+
+/*----------LINE HEIGHT----------*/
+
+.landingpage-listing .line-height-smallest {
+line-height: 1;
+}
+
+.landingpage-listing .line-height-small {
+line-height: 1.25;
+}
+
+.landingpage-listing .line-height-normal {
+line-height: 1.5;
+}
+
+.landingpage-listing .line-height-wide {
+line-height: 1.75;
+}
+
+.landingpage-listing .line-height-widest {
+line-height: 2;
+}
+
+/*---------FONT STYLE----------*/
+
+.landingpage-listing .font-style-italic {
+font-style: italic;
+}
+
+/*----------TEXT TRANSFORM----------*/
+
+.landingpage-listing .text-transform-uppercase {
+text-transform: uppercase;
+}
+
+/*----------TEXT ALIGN----------*/
+
+.landingpage-listing .text-center {
+text-align: center;
+}
+
+.landingpage-listing .text-left {
+text-align: left;
+}
+
+.landingpage-listing .text-right {
+text-align: right;
+}
+
+/*------------------------------THEME------------------------------*/
+
+/*----------COLOR - THEME----------*/
+
+.landingpage-listing .color-primary {
+color: #3371a2;
+}
+
+.landingpage-listing .color-secondary {
+color: #3d839f;
+}
+
+.landingpage-listing .color-tertiary {
+color: #6190ca;
+}
+
+.landingpage-listing .color-quarter {
+color: #5e7ecc;
+}
+
+.landingpage-listing .color-quinary {
+color: #84a7c5;
+}
+
+.landingpage-listing .color-senary {
+color: #356992;
+}
+
+.landingpage-listing .color-septenary {
+color: #84a7c5;
+}
+
+.landingpage-listing .color-octonary {
+color: #4263a1;
+}
+
+.landingpage-listing .color-nonary {
+color: #285b86;
+}
+
+.landingpage-listing .color-grey-medium {
+color: #1172c0;
+}
+
+.landingpage-listing .color-grey-light-t {
+color: #87c1d9;
+}
+
+.landingpage-listing .color-grey-similer {
+color: #003c75;
+}
+
+.landingpage-listing .color-grey-white {
+color: #79819f;
+}
+
+.landingpage-listing .color-grey-red-light {
+color: #d76159;
+}
+
+.landingpage-listing .color-grey-blue-dark {
+color: #104669;
+}
+
+.landingpage-listing .color-grey-blue-dark-b {
+color: #375e93;
+}
+
+.landingpage-listing .color-grey-blue-s-light {
+color: #4263A1;
+}
+
+.landingpage-listing .color-dark-t-white {
+color: #5f6c7d;
+}
+
+/*----------COLOR - BASE----------*/
+.landingpage-listing .color-black {
+color: #54647e;
+}
+
+.landingpage-listing .color-grey {
+color: #3a4f61;
+}
+
+.landingpage-listing .color-grey-soft {
+color: #979797;
+}
+
+.landingpage-listing .color-grey-light {
+color: #6a817e;
+}
+
+.landingpage-listing .color-blue {
+color: #124476;
+}
+
+.landingpage-listing .color-purple {
+color: #4c0094;
+}
+
+.landingpage-listing .color-1 {
+color: #0C3C74;
+display: block;
+}
+
+.landingpage-listing .color_230 {
+color: #124476;
+}
+
+.landingpage-listing .color_101 {
+color: #4E5D79;
+}
+
+.landingpage-listing .color_102 {
+color: #3B63A9;
+}
+
+.landingpage-listing .color_103 {
+color: #6D85AB;
+}
+
+.line_heite_ht {
+line-height: 0.7;
+}
+
+.landingpage-listing .color_104 {
+color: #B6BDC8;
+}
+
+.landingpage-listing .color_105 {
+color: #9DA4AA;
+margin-top: 0px;
+line-height: 0.8;
+}
+
+.margin_t_ctimage {
+margin-top: 70px;
+}
+
+
+
+.landingpage-listing .border_bottom_hight {
+border-bottom: 2px solid #BAC3D0;
+display: inline-block;
+padding-bottom: 9px;
+}
+
+.landingpage-listing .border_bottom_hight_2 {
+border-bottom: 4px solid #CFD9E9;
+display: inline-block;
+padding-bottom: 9px;
+}
+
+
+
+.landingpage-listing .border_bottom_hight_4 {
+border-bottom: 4px solid #CFD9E9;
+display: inherit;
+padding-bottom: 13px;
+width: -webkit-max-content;
+width: -moz-max-content;
+width: max-content;
+text-align: center;
+margin: auto;
+}
+
+.landingpage-listing .border_bottom_hight_5 {
+border-bottom: 4px solid #CFD9E9;
+display: inherit;
+padding-bottom: 6px;
+width: -webkit-max-content;
+width: -moz-max-content;
+width: max-content;
+text-align: center;
+margin: auto;
+border-top: 4px solid #CFD9E9;
+padding-top: 2px;
+margin-top: 14px;
+margin-bottom: 14px;
+}
+
+.landingpage-listing .border_bottom_hight_6 {
+border-bottom: 4px solid #CFD9E9;
+display: inherit;
+padding-bottom: 4px;
+width: -webkit-max-content;
+width: -moz-max-content;
+width: max-content;
+text-align: center;
+margin: auto;
+border-top: 4px solid #CFD9E9;
+padding-top: 2px;
+margin-top: 14px;
+margin-bottom: 14px;
+}
+
+.mb_00 {
+margin-bottom: 0;
+}
+
+.landingpage-listing .color_476294 {
+color: #476294;
+}
+
+
+
+.ct_class_linehite {
+line-height: 1;
+font-size: 55pt !important;
+}
+
+.landingpage-listing .color_929AA5 {
+color: #929AA5;
+}
+
+.line-height___1 {
+line-height: 0;
+}
+
+.mt-200 {
+margin-top: 20px;
+}
+
+
+.table_box {
+max-width: 605px;
+width: 100%;
+margin: auto;
+text-align: center;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(2) {
+text-align: center;
+width: 44px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(2) {
+text-align: center;
+width: 44px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(3)>td:nth-child(2) {
+text-align: center;
+width: 44px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(4)>td:nth-child(2) {
+text-align: center;
+width: 44px;
+}
+
+
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(3) {
+text-align: left;
+font-size: 29px;
+padding: 5px 15px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(3) {
+text-align: left;
+font-size: 29px;
+padding: 5px 15px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(3)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(3)>td:nth-child(3) {
+text-align: left;
+font-size: 29px;
+padding: 5px 15px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(4)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(4)>td:nth-child(3) {
+text-align: left;
+font-size: 29px;
+padding: 5px 15px;
+}
+
+
+
+
+.table_box.margin-t-widest>table>tbody>tr td span {
+color: #5F686F;
+}
+
+.landingpage-listing .color_607A95 {
+color: #607A95;
+}
+
+.landingpage-listing .color_58E {
+color: #46558E;
+}
+
+
+
+
+.border_top_clsss {
+margin-top: 0;
+border-top: 1px solid #9BA6B0;
+display: inline-block;
+}
+
+.border_top_clsss_2 {
+margin-bottom: 0 !important;
+padding-bottom: 0 !important;
+line-height: 0.25 !important;
+padding-top: 0.6em;
+}
+
+.landingpage-listing .color_460 {
+color: #3A4F61;
+}
+
+.landingpage-listing .color_3A4857 {
+color: #665751;
+}
+
+.landingpage-listing .color_357E62 {
+color: #357E62;
+}
+.landingpage-listing .color_325A7A {
+color: #325A7A;
+}
+.landingpage-listing .color_306396 {
+color: #306396;
+}
+.landingpage-listing .color_24507D {
+color: #24507D;
+}
+.landingpage-listing .color_597089 {
+color: #597089;
+}
+.landingpage-listing .color_60872B {
+color: #60872B;
+}
+.landingpage-listing .color_339570 {
+color: #339570;
+}
+.landingpage-listing .color_62af35 {
+color: #62af35;
+}
+.landingpage-listing .color_389673 {
+color: #389673;
+}
+.landingpage-listing .color_427630 {
+color: #427630;
+}
+.landingpage-listing .color_597089 {
+color: #597089;
+}
+.landingpage-listing .color_ea7fbf {
+color: #ea7fbf;
+}
+.landingpage-listing .color_ee6b62 {
+color: #ee6b62;
+}
+
+.landingpage-listing .color_7a776a {
+color: #7a776a;
+}
+.landingpage-listing .color_706666 {
+color: #706666;
+}
+.landingpage-listing .color_716767 {
+color: #716767;
+}
+.landingpage-listing .color_8db279 {
+color: #8db279;
+}
+.landingpage-listing .color_24507d {
+color: #24507d;
+}
+.landingpage-listing .color_6d4d2f {
+color: #6d4d2f;
+}
+.landingpage-listing .color_3a4b79 {
+color: #3a4b79;
+}
+.landingpage-listing .color_125d40 {
+color: #125d40;
+}
+.landingpage-listing .color_445685 {
+color: #445685;
+}
+.landingpage-listing .color_427630 {
+color: #427630;
+}
+.landingpage-listing .color_306396 {
+color: #306396;
+}
+.landingpage-listing .color_339570 {
+color: #339570;
+}
+.landingpage-listing .color_3a4b79 {
+color: #3a4b79;
+}
+.landingpage-listing .color_597089 {
+color: #597089;
+}
+.landingpage-listing .color_705947 {
+color: #705947;
+}
+.landingpage-listing .color_306396 {
+color: #306396;
+}
+.landingpage-listing .color_597089 {
+color: #597089;
+}
+.landingpage-listing .color_716767 {
+color: #716767;
+}
+
+.landingpage-listing .color_2f4e71 {
+color: #2f4e71;
+}
+.landingpage-listing .color_2b507a {
+color: #2b507a;
+}
+.landingpage-listing .color_0b4c42 {
+color: #0b4c42;
+}
+.landingpage-listing .color_516070 {
+color: #516070;
+}
+.landingpage-listing .color_716767 {
+color: #716767;
+}
+
+.landingpage-listing .color_455421 {
+color: #455421;
+}
+.landingpage-listing .color_306396 {
+color: #306396;
+}
+.landingpage-listing .color_3a4857 {
+color: #3a4857;
+}
+.landingpage-listing .color_427630 {
+color: #427630;
+}
+.landingpage-listing .color_4077ad {
+color: #4077ad;
+}
+.landingpage-listing .color_bbc9cd {
+color: #bbc9cd;
+}
+.landingpage-listing .color_3a4f61 {
+color: #3a4f61;
+}
+.landingpage-listing .color_b5c9de {
+color: #b5c9de;
+}
+
+.ct_with {
+margin: 0;
+line-height: 22px;
+}
+.ct_with_plus {
+margin: 0;
+line-height: 35px;
+font-size: 58pt !important;
+}
+
+
+
+
+
+.landingpage-listing .color_200 {
+color: #C5DFFA;
+margin: 0;
+font-size: 79px;
+line-height: .6;
+padding-bottom: 15px;
+}
+
+.landingpage-listing .color_200dd {
+color: #cedadd;
+margin: 0;
+font-size: 79px;
+line-height: .6;
+padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NEw style Css  */
+
+.border_dafult {
+border-bottom: 3px solid #CEDADD;
+padding-bottom: 20px;
+width: 135px;
+text-align: center;
+margin: auto;
+margin-bottom: 20px;
+}
+.border_dafult_big {
+border-bottom: 5px solid #CEDADD;
+padding-bottom: 20px;
+width: 370px;
+text-align: center;
+margin: auto;
+margin-bottom: 20px;
+}
+
+.border_dafult_big_2 {
+border-bottom: 5px solid #cedadd;
+padding-bottom: 10px;
+width: 526px;
+text-align: center;
+margin: auto;
+margin-bottom: 15px;
+}
+
+
+.border_dafult_big_3 {
+border-bottom: 3px solid #cedadd;
+padding-bottom: 10px;
+width: 410px;
+text-align: center;
+margin: auto;
+margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landingpage-listing .dot_color {
+color: #9BA6B0;
+}
+
+.bodrder_st_sm {
+border-top: 3px solid #9BA6B0;
+width: 275px;
+margin: auto;
+padding-top: 0.4em;
+margin-top: 0.8em;
+}
+
+.bodrder_st_sm_2 {
+border-top: 3px solid #9BA6B0;
+width: 308px;
+margin: auto;
+padding-top: 0.3em;
+margin-top: 0.7em;
+}
+
+.c_class_regular.font-size-30.color_460 {
+padding-top: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.color_460_margin_s {
+margin: 3px 0 !important;
+}
+
+.landingpage-listing .dot_color_2 {
+background-color: #A9B5C0;
+height: 14px;
+width: 14px;
+border-radius: 50%;
+margin: auto;
+margin-top: 13px;
+display: block;
+margin-bottom: 15px;
+}
+
+.landingpage-listing .color_575 {
+color: #767575;
+margin: 0 !important;
+}
+
+.landingpage-listing .color_050 {
+color: #505050;
+}
+
+h2.mb_0_0_0 {
+margin-bottom: 0 !important;
+}
+
+h2.mb_0_0_0_t {
+margin-top: 0 !important;
+}
+
+.landingpage-listing .color_2AD {
+color: #4263A1;
+}
+
+.line-height-1 {
+line-height: 1;
+}
+
+.c_t_clss_t {
+margin: 0;
+margin-top: 15px;
+}
+
+
+
+.landingpage-listing .font-size-15 {
+font-size: 15pt;
+}
+
+.new_class_image {
+max-width: 225px;
+margin: auto;
+margin-top: 10px;
+}
+
+
+.c_class {
+font-family: 'Verdana';
+font-weight: 700;
+}
+
+.c_class_regular {
+font-family: 'Verdana';
+font-weight: 400;
+padding-top: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.landingpage-listing .border-top-small-S {
+border-top: 4px solid #c5e4fb;
+max-width: 78px;
+margin: auto;
+margin-top: 1rem;
+margin-bottom: 1.2rem;
+width: 100%;
+}
+
+/*----------BACKGROUND----------*/
+.landingpage-listing .bg-color-primary {
+background-color: #f0f6f8;
+}
+
+/*----------------Custom Css -----------*/
+.landingpage-listing .page {
+margin: 0px 15px;
+}
+
+.list_sct .color-22.font-size-25.m-0 {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 89px;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+text-align: left;
+margin: auto;
+}
+
+.list_sct .color-22.font-size-25.m-0 span {
+width: 27px;
+}
+
+.list_sct .color-22.font-size-25.m-0 small {
+width: 17px;
+text-align: center;
+}
+
+
+
+
+/*----------DIVIDER - TITLE----------*/
+
+.landingpage-listing .title-divider-primary {
+display: inline-block;
+padding: 0.1rem 1rem;
+border: 4px solid #A9BEDF;
+margin-top: 0.2em;
+margin-bottom: 0.2em;
+}
+
+.landingpage-listing .title-divider-secondary {
+display: inline-block;
+padding: 0.5rem 0;
+border-bottom: 5px solid #ddeafa;
+}
+
+.landingpage-listing .border-top {
+border-top: 5px solid #dceffe;
+max-width: 487px;
+margin: auto;
+margin-top: 1.5rem;
+margin-bottom: 1.2rem;
+width: 100%;
+}
+
+.landingpage-listing .border-top-small {
+border-top: 4px solid #c5e4fb;
+max-width: 382px;
+margin: auto;
+margin-top: 1rem;
+margin-bottom: 1.2rem;
+width: 100%;
+}
+
+.landingpage-listing .border-top-big {
+border-top: 5px solid #dceffe;
+max-width: 700px;
+margin: auto;
+margin-top: 1.5rem;
+margin-bottom: 1.2rem;
+width: 100%;
+}
+
+
+/*----------DIVIDER - SUBTITLE----------*/
+.landingpage-listing .subtitle-divider-primary {
+display: inline-block;
+padding-bottom: 10px;
+margin-bottom: 10px;
+border-bottom: 10px solid #e5edf5;
+}
+
+/*----------DIVIDER - DESC----------*/
+.landingpage-listing .desc-divider-primary {
+display: inline-block;
+padding: 1rem 3.5rem;
+border: 7px solid #ddeafa;
+}
+
+/*----------DIVIDER - WRAPPER----------*/
+.landingpage-listing .wrapper-divider-primary:after {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+content: "";
+width: 35px;
+height: 35px;
+margin: 3rem auto;
+background-color: #ddeafa;
+border-radius: 100%;
+}
+
+.landingpage-listing .wrapper-divider-secondary:after {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+content: "";
+width: 400px;
+height: 5px;
+margin: 2.25rem auto;
+background-color: #ddeafa;
+}
+
+.m-0 {
+margin-top: 0 !important;
+margin-bottom: 0 !important;
+}
+
+/*----------TABLE----------*/
+.landingpage-listing table {
+font-family: "Nunito Sans", "Arial", sans-serif !important;
+font-size: 25pt;
+font-weight: 200;
+color: #152E66;
+border-collapse: collapse;
+text-align: left;
+}
+
+@media (min-width: 1100px) {
+.landingpage-listing table {
+width: 52.5%;
+}
+}
+
+
+
+
+
+@media (max-width: 992px) {
+.landingpage-listing table {
+width: 60%;
+}
+}
+
+@media (max-width: 875px) {
+.landingpage-listing table {
+width: 80%;
+}
+}
+
+@media all and (max-width: 767px) {
+.landingpage-listing .font-size-60 {
+font-size: 32pt;
+}
+
+.landingpage-listing .font-size-22 {
+font-size: 17pt;
+}
+
+.landingpage-listing .font-size-24 {
+font-size: 20pt;
+}
+
+
+.landingpage-listing .font-size-50 {
+font-size: 32pt;
+}
+
+.landingpage-listing .margin-b-large {
+margin-bottom: 0.5rem;
+}
+
+.landingpage-listing .font-size-25 {
+font-size: 22pt;
+}
+
+.landingpage-listing .font-size-29 {
+font-size: 25pt;
+}
+
+.landingpage-listing .font-size-35 {
+font-size: 35pt;
+}
+.landingpage-listing .font-size-37 {
+font-size: 27pt;
+}
+
+.landingpage-listing .font-size-40 {
+font-size: 26pt;
+}
+
+.landingpage-listing .font-size-28 {
+font-size: 20pt;
+}
+
+.landingpage-listing .font-size-35 {
+font-size: 29pt;
+}
+
+.landingpage-listing .font-size-30 {
+font-size: 24pt;
+}
+
+.landingpage-listing .font-size-35 {
+font-size: 24pt;
+}
+
+
+.new_class_image {
+max-width: 225px;
+}
+
+.landingpage-listing .font-size-45 {
+font-size: 26pt;
+}
+
+.landingpage-listing h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 6px 0;
+}
+
+.landingpage-listing .font-size-33 {
+font-size: 21pt;
+}
+
+.landingpage-listing .font-size-41 {
+font-size: 30pt;
+}
+
+.landingpage-listing .font-size-20 {
+font-size: 16pt;
+}
+
+.landingpage-listing .font-size-54 {
+font-size: 52pt;
+}
+
+.landingpage-listing .font-size-46 {
+font-size: 37pt;
+}
+
+.landingpage-listing .font-size-32 {
+font-size: 23pt;
+}
+
+.ct_class_linehite {
+line-height: 1;
+font-size: 37pt !important;
+}
+
+.landingpage-listing .margin-b-largest {
+margin-bottom: 3rem;
+}
+
+.landingpage-listing .font-size-56 {
+font-size: 34pt;
+}
+
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(2)>td:nth-child(3) {
+text-align: left;
+font-size: 15px;
+padding: 5px 8px;
+}
+
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(1),
+.table_box.margin-t-widest>table>tbody>tr:nth-child(1)>td:nth-child(3) {
+text-align: left;
+font-size: 15px;
+padding: 5px 8px;
+}
+
+
+}
+
+
+.landingpage-listing table tbody tr td {
+border: 2px solid #6A6A6A;
+background-color: #FFF;
+}
+
+/* .landingpage-listing table tbody tr td>span {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+padding: 0.15rem 0;
+}
+
+.landingpage-listing table tbody tr td>span>span {
+display: inline-block;
+margin: 0 0.5rem;
+}*/
+
+/*----------TABLE - TBODY - TR----------*/
+
+/*        .landingpage-listing table tbody tr:first-child td {
+background-color: transparent;
+}*/
+
+/*----------TABLE - TBODY - TD - FIRST----------*/
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(1) {
+width: 4rem;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(2) {
+text-align: center;
+width: 2.75rem;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(3) {
+text-align: center;
+width: 1.25rem;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(4) {
+width: 1.5rem;
+margin-right: 0;
+}
+
+.landingpage-listing table tbody tr td.td-first>span>span:nth-child(5) {
+text-align: right;
+width: 6.5rem;
+margin-left: 0;
+}
+
+/*----------TABLE - TBODY - TD - SECOND----------*/
+
+.landingpage-listing table tbody tr td.td-second>span {
+display: inline-block;
+margin: 0 0.5rem;
+}
+
+/*----------TABLE - TBODY - TD - THIRD----------*/
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(1) {
+width: 4.5rem;
+}
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(2) {
+width: 1.25rem;
+margin-right: 0;
+}
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(3) {
+text-align: right;
+width: 5.5rem;
+margin-left: 0;
+}
+
+.landingpage-listing table tbody tr td.td-third>span>span:nth-child(4) {
+text-align: left;
+width: 6.5rem;
+}
+
+
+</style>
+
 
 
 </head>
 <!-- Desktop -->
 
 <body>
-    <div class="landingpage-listing">
-        <div class="listing bg-color-primary">
-            <!--Page-->
-            <div class="page">
-                <!--Landingpage-->
-                <div class="landingpage text-center">
-                    <!--Title Header - Primary-->
+<div class="landingpage-listing">
+<div class="listing bg-color-primary">
+<!--Page-->
+<div class="page">
+<!--Landingpage-->
+<div class="landingpage text-center">
+<!--Title Header - Primary-->
 
-                    <section class="section title-header primary margin-b-large">
-                        <div class="title-header-text ">
-                            <div class="caption">
-                                <p> <span class="font-regular font-style-italic font-size-25 color_3A4857">ALL-METAL</p>
-                                <p class="font-bold font-size-30 color_357E62 margin-t-wide">Garden Hose</p>
-                                <p class="font-regular font-size-50 color_325A7A padding-b-wide">BUBBLER</p>
-                            </div>
-                        </div>
+<section class="section title-header primary margin-b-large">
+<div class="title-header-text ">
+<div class="caption">
+<p> <span class="font-regular font-style-italic font-size-25 color_3A4857">ALL-METAL</p>
+<p class="font-bold font-size-30 color_357E62 margin-t-wide">Garden Hose</p>
+<p class="font-regular font-size-50 color_325A7A padding-b-wide">BUBBLER</p>
+</div>
+</div>
 
-                        <div class="subtitle margin_t_ctimage">
+<div class="subtitle margin_t_ctimage">
 
-                            <div class="image margin-b-widest ">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_paper_grey_h2omarked.jpg" />
-                            </div>
+<div class="image margin-b-widest ">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_paper_grey_h2omarked.jpg" />
+</div>
 
-                            <h4 class="font-regular font-style-italic font-size-30 color_306396">Classic</h4>
-                            <h4 class="font-regular font-size-27 color_24507D">Hose-End</h4>
-                            <h4 class="font-regular font-size-30 color_306396 margin-b-widest">Watering Tool <br>Soaker <br>Attachment</h4>
-                            <p class="font-regular font-size-23 color_597089 margin-b-widest">Irrigates with a mellow <br>
-								trickling flow that<br>
-								allows water to gently<br>
-								soak into the earth<br>
-								while minimizing erosion.</p>
-                            <h4 class="font-regular font-size-27 color_60872B margin-b-widest">Protect Your Plants </h4>
+<h4 class="font-regular font-style-italic font-size-30 color_306396">Classic</h4>
+<h4 class="font-regular font-size-27 color_24507D">Hose-End</h4>
+<h4 class="font-regular font-size-30 color_306396 margin-b-widest">Watering Tool <br>Soaker <br>Attachment</h4>
+<p class="font-regular font-size-23 color_597089 margin-b-widest">Irrigates with a mellow <br>
+trickling flow that<br>
+allows water to gently<br>
+soak into the earth<br>
+while minimizing erosion.</p>
+<h4 class="font-regular font-size-27 color_60872B margin-b-widest">Protect Your Plants </h4>
 
-                            <div class="image margin-b-widest">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_pepperplant_h2omarked.jpg" />
-                            </div>
+<div class="image margin-b-widest">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_pepperplant_h2omarked.jpg" />
+</div>
 
-                            <p class="font-regular font-size-23 color_339570 margin-b-normal">Perfect for</p>
-                            <p class="font-bold font-size-23 color_62af35 margin-b-normal">Fragile Seedlings</p>
-                            <p class="font-bold font-size-23 color_389673 margin-b-normal">Newly Planted Saplings </p>
-                            <p class="font-regular font-size-23 color_339570 margin-b-widest">and other delicate plants <br>that require a light touch  </p>
+<p class="font-regular font-size-23 color_339570 margin-b-normal">Perfect for</p>
+<p class="font-bold font-size-23 color_62af35 margin-b-normal">Fragile Seedlings</p>
+<p class="font-bold font-size-23 color_389673 margin-b-normal">Newly Planted Saplings </p>
+<p class="font-regular font-size-23 color_339570 margin-b-widest">and other delicate plants <br>that require a light touch  </p>
 
-                            <div class="image margin-b-normal">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_seedlings_h2omarked.jpg" />
-                            </div>
+<div class="image margin-b-normal">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_seedlings_h2omarked.jpg" />
+</div>
 
-                             <p class="font-regular font-size-23 color_427630 margin-b-widest "> Sensitive plants like tomatoes like to remain <br>
-							dry up top. Help prevent wetting foliage by <br>
-							focusing your water delivery underneath<br>
-							greenery with a soft irrigating stream<br>
-							aimed directly at the roots.
-							</p>
-							<div class="image margin-b-wide line-height___1">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_sweetpotato_h2omarked.jpg" />
-                                    <br>
-                                     <img class="image-responsive" src="https://silverfinger.com/eBay/bubbler_gravel_h2omarked.jpg" />
-                            </div>
-                            <p class="font-regular font-size-25 color_597089 margin-b-widest margin-t-middle">Excellent Device <br>to irrigate your </p>
-                            <h4 class="font-regular font-size-23 color_ea7fbf ">Roses</h4>
-                            <h4 class="font-regular font-size-23 color_ee6b62 ">Fruit Trees</h4>
+<p class="font-regular font-size-23 color_427630 margin-b-widest "> Sensitive plants like tomatoes like to remain <br>
+dry up top. Help prevent wetting foliage by <br>
+focusing your water delivery underneath<br>
+greenery with a soft irrigating stream<br>
+aimed directly at the roots.
+</p>
+<div class="image margin-b-wide line-height___1">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_sweetpotato_h2omarked.jpg" />
+<br>
+<img class="image-responsive" src="https://silverfinger.com/eBay/bubbler_gravel_h2omarked.jpg" />
+</div>
+<p class="font-regular font-size-25 color_597089 margin-b-widest margin-t-middle">Excellent Device <br>to irrigate your </p>
+<h4 class="font-regular font-size-23 color_ea7fbf ">Roses</h4>
+<h4 class="font-regular font-size-23 color_ee6b62 ">Fruit Trees</h4>
 
-                            <p class="border_dafult"></p>
+<p class="border_dafult"></p>
 
-                            <h4 class="font-regular font-size-23 color_7a776a ">Ring Wells</h4>
-                            <h4 class="font-regular font-size-23 color_706666 ">Raised Beds</h4>
+<h4 class="font-regular font-size-23 color_7a776a ">Ring Wells</h4>
+<h4 class="font-regular font-size-23 color_706666 ">Raised Beds</h4>
 
-                             <p class="border_dafult"></p>
-                             <h4 class="font-regular font-size-23 color_339570">Vegetable <br>Gardens</h4>
-                             <p class="border_dafult"></p>
-                            <!-- <h4 class="font-bold font-size-55 color_200"> • </h4> -->
+<p class="border_dafult"></p>
+<h4 class="font-regular font-size-23 color_339570">Vegetable <br>Gardens</h4>
+<p class="border_dafult"></p>
+<!-- <h4 class="font-bold font-size-55 color_200"> • </h4> -->
 
-                            <h4 class="font-regular font-size-23 color_716767 ">Flower Pots</h4>
-                            <h4 class="font-regular font-size-23 color_8db279 ">and other <br> <span class="color_716767">Container <br>Plantings</span></h4>
-
-
-                            <p class="border_dafult_big"></p>
-
-                            <h4 class="font-regular font-size-23 color_24507d margin-b-widest">Place along the drip lines<br>
-							 of large mature trees to <br>
-							percolate at depth:<br>
-							lets water slowly<br>
-							sink down into<br>
-							belowground<br>
-							root systems<br>
-							for a deep<br>
-							soaking.<br>
-							</h4>
-							 <div class="image margin-b-wide">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_lawn_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-size-23 color_389673 margin-b-widest">Provide managed flooding by<br>
-								breaking up high velocity torrents<br>
-								into calm, even flows that fall softly<br>
-								to seep into the earth.<br>
-								</h4>
-                            <h4 class="font-bold font-size-23 color_6d4d2f margin-b-widest">Prevent Erosion Damage</h4>
-                            <h4 class="font-regular font-size-23 color_3a4b79 margin-b-widest">Saturate the ground rapidly yet gently,<br>
-								delivering large amounts of absorbed<br>
-								water into soil without overwhelming<br>
-								deluges drowning your plantings,<br>
-								blasting away mulch cover,<br>
-								excavating ruts & gullies.<br>
-								</h4>
-							 <div class="image margin-b-wide">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_paper_navyblue_h2omarked.jpg" />
-                            </div>
-
-                            <h4 class="font-regular font-size-23 color_445685 margin-b-widest">Avoid hoses flailing around <br>
-							with gushing jets of waterbr <br>
-							spraying everywhere.br <br>
-							</h4>
-                            <h4 class="font-regular font-size-23 color_427630 margin-b-widest">No need to stand there with <br>
-							your hose in your hands ~</h4>
-
-                            <h4 class="font-regular font-size-23 color_445685 margin-b-widest">You can just turn on the tap <br>
-							then set your watering down</h4>
-                            <h4 class="font-regular font-size-23 color_427630 margin-b-widest"> Run water at full force <br>
-								yet keep the soil around <br>
-								your plants undisturbed.<br>
-								</h4>
-                            <h4 class="font-bold font-size-23 color_306396 margin-b-widest">Perfect for a <br>Gentle, Slow Soak</h4>
-
-                            <h4 class="font-regular font-size-23 color_427630 margin-b-widest">Forget it and walk away a while, <br>
-								without worrying about flooding  <br>
-								and returning to discover water  <br>
-								has washed away loads of soil  <br>
-								while you were gone.  <br>
-								</h4>
-
-							<div class="image margin-b-wide">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_midair_flood_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-bold font-size-23 color_306396 margin-b-wide">Set at a low burble to slowly permeate <br>over a long while</h4>
-
-                            <h4 class="font-regular font-style-italic font-size-20 color_339570 margin-b-wide">or</h4>
-
-                            <h4 class="font-regular font-size-23 color_3a4b79 margin-b-widest">Run the hose at full flow <br>
-								for rapid infiltration into <br>
-								sandy permeable loams <br>
-							</h4>
-							<div class="image margin-b-wide">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_alyssum_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-size-23 color_705947">Spot-water without disturbing <br>the surrounding landscaping</h4>
-                             <p class="border_dafult_big"></p>
-                            <h4 class="font-regular font-size-23 color_597089 margin-b-widest">Great adjunct to sprinklers  <br>
-								for focused watering and <br>
-								bathing spots on your lawn <br>
-								that sprinklers inevitably miss. <br>
-								</h4>
-                           	<div class="image margin-b-wide">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_floracolor_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-bold font-size-23 color_716767 margin-b-widest">Excellent for Dry Climates</h4>
-                            <h4 class="font-regular font-size-23 color_597089 margin-b-widest">Areas like California & the Southwest <br>
-							are increasingly going through periods <br>
-							of serious drought, making it imperative <br>
-							to use every drop of water efficiently. <br>
-							</h4>
-							 <h4 class="font-bold color_200"> • </h4>
-                            <h4 class="font-regular font-size-23 color_306396 margin-b-widest">Bubblers Prevent Wastage <br>
-							by delivering water exactly <br>
-							where you want it to go: <br>
-							straight to the root systems <br>
-							</h4>
-                            <div class="image margin-b-wide">
-                               <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_situ_florabundance_h2omarked.jpg" />
-                            </div>
-
- 							 <h4 class="font-bold font-size-23 color_2f4e71 margin-b-widest">Time Honored Horticultural Classic</h4>
-                            <h4 class="font-regular font-size-23 color_306396 margin-b-widest">Just screw it onto your hose  <br>
-								for a super easy and practical <br>
-								low-tech irrigation solution. <br></h4>
-							 <h4 class="font-bold color_200"> • </h4>
-	                            <h4 class="font-regular font-size-23 color_2b507a margin-b-widest">A tried, tested and true  <br>
-								old fashioned approach <br>
-								to smart and effective <br>
-								water conservation. <br></h4>
-							<h4 class="font-bold font-size-23 color_2f4e71 margin-b-widest">Really Helps Save Water</h4>
-                            <h4 class="font-regular font-size-23 color_306396 margin-b-widest">Give your plants the deep drinks <br>
-							they need in such arid regions <br>
-							while greatly reducing water <br>
-							lost to sprinkler evaporation. <br>
-							</h4>
-							 <div class="image margin-b-wide">
-                               <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_fitting_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-size-23 color_0b4c42 margin-b-normal">3/4" Thread <br>11.5 NH</h4>
-                            <p class="font-regular font-size-20px color_0b4c42 margin-b-wide">The officially designated thread <br>
-							standard for garden hose connectors in <br>
-							the United States and Canada is known <br>
-							as NH, which stands for "National Hose”. <br>
-							</p>
-							 <p class="font-regular font-size-20px color_516070 margin-b-widest">Hose coupling specs are standardized by law. <br>
-							For example, there are NFPA and ASME-ANSI  <br>
-							standards for automotive, appliance, or fire hose  <br>
-							fittings. ‘NH’ designates full-form threads produced <br>
-							by directly cutting solid metal, which is the highest <br>
-							quality standard for this type of use, as opposed <br>
-							to threads produced by rolling thin material and <br>
-							designated ‘NHR’, such as are typically found <br>
-							on lower quality fixtures. <br>
-							</p>
-							 <p class="font-regular font-size-23 color_716767">Please Note</p>
-							 <p class="font-regular font-size-20px color_455421 margin-b-widest"> Know your intended irrigation purpose  <br>
-								with this device. A bubbler is not a sprayer  <br>
-								that disperses water widely across an area. <br>
-								 A bubbler’s basic yet vitally useful purpose is to <br>
-								simply break the force of high-pressure plumbing <br>
-								flow so it instead becomes a gentle, localized soak. <br>
-								Rather than flowing from every pore of the entire <br>
-								bubbler head all at once, water burbles along the <br>
-								path of least resistance from those perforations <br>
-								directly nearest the spot you’re irrigating, fo <br>
-								a localized, soft yet voluminous soaking. <br>
-								 This means it’s working properly, <br>
-								as designed & intended. <br>
-								</p> 
-							  <p class="font-regular font-size-20px color_516070 margin-b-widest">Metals react electrolytically with one another <br>
-								in the presence of dampness, which can cause <br>
-								 dissolved minerals in tapwater to mineralize screw- <br>
-								threads over time. It’s wise to lube your bubbler’s <br>
-								threads (petroleum jelly or most any kind of oil will <br>
-								do) if you plan to leave the bubbler attached to <br>
-								metal hose couplings over a prolonged period. <br></p>
-							 <p class="font-regular font-size-20px color_0b4c42 margin-b-normal"></p>
-							  <div class="image margin-b-wide">
-                               <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/bubbler_ferns_h2omarked.jpg" />
-                            </div>
+<h4 class="font-regular font-size-23 color_716767 ">Flower Pots</h4>
+<h4 class="font-regular font-size-23 color_8db279 ">and other <br> <span class="color_716767">Container <br>Plantings</span></h4>
 
 
+<p class="border_dafult_big"></p>
+
+<h4 class="font-regular font-size-23 color_24507d margin-b-widest">Place along the drip lines<br>
+of large mature trees to <br>
+percolate at depth:<br>
+lets water slowly<br>
+sink down into<br>
+belowground<br>
+root systems<br>
+for a deep<br>
+soaking.<br>
+</h4>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_lawn_h2omarked.jpg" />
+</div>
+<h4 class="font-regular font-size-23 color_389673 margin-b-widest">Provide managed flooding by<br>
+breaking up high velocity torrents<br>
+into calm, even flows that fall softly<br>
+to seep into the earth.<br>
+</h4>
+<h4 class="font-bold font-size-23 color_6d4d2f margin-b-widest">Prevent Erosion Damage</h4>
+<h4 class="font-regular font-size-23 color_3a4b79 margin-b-widest">Saturate the ground rapidly yet gently,<br>
+delivering large amounts of absorbed<br>
+water into soil without overwhelming<br>
+deluges drowning your plantings,<br>
+blasting away mulch cover,<br>
+excavating ruts & gullies.<br>
+</h4>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_paper_navyblue_h2omarked.jpg" />
+</div>
+
+<h4 class="font-regular font-size-23 color_445685 margin-b-widest">Avoid hoses flailing around <br>
+with gushing jets of waterbr <br>
+spraying everywhere.br <br>
+</h4>
+<h4 class="font-regular font-size-23 color_427630 margin-b-widest">No need to stand there with <br>
+your hose in your hands ~</h4>
+
+<h4 class="font-regular font-size-23 color_445685 margin-b-widest">You can just turn on the tap <br>
+then set your watering down</h4>
+<h4 class="font-regular font-size-23 color_427630 margin-b-widest"> Run water at full force <br>
+yet keep the soil around <br>
+your plants undisturbed.<br>
+</h4>
+<h4 class="font-bold font-size-23 color_306396 margin-b-widest">Perfect for a <br>Gentle, Slow Soak</h4>
+
+<h4 class="font-regular font-size-23 color_427630 margin-b-widest">Forget it and walk away a while, <br>
+without worrying about flooding  <br>
+and returning to discover water  <br>
+has washed away loads of soil  <br>
+while you were gone.  <br>
+</h4>
+
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_midair_flood_h2omarked.jpg" />
+</div>
+<h4 class="font-regular font-size-23 color_306396 margin-b-wide">Set at a low burble to slowly permeate <br>over a long while</h4>
+
+<h4 class="font-regular font-style-italic font-size-20 color_339570 margin-b-wide">or</h4>
+
+<h4 class="font-regular font-size-23 color_3a4b79 margin-b-widest">Run the hose at full flow <br>
+for rapid infiltration into <br>
+sandy permeable loams <br>
+</h4>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_alyssum_h2omarked.jpg" />
+</div>
+<h4 class="font-regular font-size-23 color_705947">Spot-water without disturbing <br>the surrounding landscaping</h4>
+<p class="border_dafult_big"></p>
+<h4 class="font-regular font-size-23 color_597089 margin-b-widest">Great adjunct to sprinklers  <br>
+for focused watering and <br>
+bathing spots on your lawn <br>
+that sprinklers inevitably miss. <br>
+</h4>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_floracolor_h2omarked.jpg" />
+</div>
+<h4 class="font-bold font-size-23 color_716767 margin-b-widest">Excellent for Dry Climates</h4>
+<h4 class="font-regular font-size-23 color_597089 margin-b-widest">Areas like California & the Southwest <br>
+are increasingly going through periods <br>
+of serious drought, making it imperative <br>
+to use every drop of water efficiently. <br>
+</h4>
+<h4 class="font-bold color_200"> • </h4>
+<h4 class="font-regular font-size-23 color_306396 margin-b-widest">Bubblers Prevent Wastage <br>
+by delivering water exactly <br>
+where you want it to go: <br>
+straight to the root systems <br>
+</h4>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_situ_florabundance_h2omarked.jpg" />
+</div>
+
+<h4 class="font-bold font-size-23 color_2f4e71 margin-b-widest">Time Honored Horticultural Classic</h4>
+<h4 class="font-regular font-size-23 color_306396 margin-b-widest">Just screw it onto your hose  <br>
+for a super easy and practical <br>
+low-tech irrigation solution. <br></h4>
+<h4 class="font-bold color_200"> • </h4>
+<h4 class="font-regular font-size-23 color_2b507a margin-b-widest">A tried, tested and true  <br>
+old fashioned approach <br>
+to smart and effective <br>
+water conservation. <br></h4>
+<h4 class="font-bold font-size-23 color_2f4e71 margin-b-widest">Really Helps Save Water</h4>
+<h4 class="font-regular font-size-23 color_306396 margin-b-widest">Give your plants the deep drinks <br>
+they need in such arid regions <br>
+while greatly reducing water <br>
+lost to sprinkler evaporation. <br>
+</h4>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_fitting_h2omarked.jpg" />
+</div>
+<h4 class="font-regular font-size-23 color_0b4c42 margin-b-normal">3/4" Thread <br>11.5 NH</h4>
+<p class="font-regular font-size-20px color_0b4c42 margin-b-wide">The officially designated thread <br>
+standard for garden hose connectors in <br>
+the United States and Canada is known <br>
+as NH, which stands for "National Hose”. <br>
+</p>
+<p class="font-regular font-size-20px color_516070 margin-b-widest">Hose coupling specs are standardized by law. <br>
+For example, there are NFPA and ASME-ANSI  <br>
+standards for automotive, appliance, or fire hose  <br>
+fittings. ‘NH’ designates full-form threads produced <br>
+by directly cutting solid metal, which is the highest <br>
+quality standard for this type of use, as opposed <br>
+to threads produced by rolling thin material and <br>
+designated ‘NHR’, such as are typically found <br>
+on lower quality fixtures. <br>
+</p>
+<p class="font-regular font-size-23 color_716767">Please Note</p>
+<p class="font-regular font-size-20px color_455421 margin-b-widest"> Know your intended irrigation purpose  <br>
+with this device. A bubbler is not a sprayer  <br>
+that disperses water widely across an area. <br>
+A bubbler’s basic yet vitally useful purpose is to <br>
+simply break the force of high-pressure plumbing <br>
+flow so it instead becomes a gentle, localized soak. <br>
+Rather than flowing from every pore of the entire <br>
+bubbler head all at once, water burbles along the <br>
+path of least resistance from those perforations <br>
+directly nearest the spot you’re irrigating, fo <br>
+a localized, soft yet voluminous soaking. <br>
+This means it’s working properly, <br>
+as designed & intended. <br>
+</p> 
+<p class="font-regular font-size-20px color_516070 margin-b-widest">Metals react electrolytically with one another <br>
+in the presence of dampness, which can cause <br>
+dissolved minerals in tapwater to mineralize screw- <br>
+threads over time. It’s wise to lube your bubbler’s <br>
+threads (petroleum jelly or most any kind of oil will <br>
+do) if you plan to leave the bubbler attached to <br>
+metal hose couplings over a prolonged period. <br></p>
+<p class="font-regular font-size-20px color_0b4c42 margin-b-normal"></p>
+<div class="image margin-b-wide">
+<img class="image-responsive"
+src="https://silverfinger.com/eBay/bubbler_ferns_h2omarked.jpg" />
+</div>
+
+<h4 class="font-regular font-size-23 color_306396 ">Quality Garden Hose Couplings</h4>
+<p class="border_dafult_big_2"></p>
+<h4 class="font-regular font-size-23 color_3a4857 margin-b-widest">Durable Aluminum Metal Construction</h4>
+<h4 class="font-regular font-size-23 color_306396"> Far superior to breakable plastic versions— <br> <span class="color_3a4857">Holds up to rocky ground and rough terrain.</span></h4>
+<p class="border_dafult_big_2"></p>
+<h4 class="font-regular font-size-23 color_427630 margin-b-wide">If you have a yard, you'll be glad you <br>
+have this classic irrigation device, a <br>
+must-have essential for any gardener. <br>
+</h4>
+
+<h4 class="font-regular color_200dd"> • </h4>
+<h4 class="font-regular font-size-23 color_306396 ">One for every hose :</h4>
+<h4 class="font-regular font-size-23 color_306396 ">Beds</h4>
+<h4 class="font-regular font-size-23 color_716767 ">Tree Wells</h4>
+<h4 class="font-regular font-size-23 color_306396 ">Front Yard</h4>
+<h4 class="font-regular font-size-23 color_716767 ">Side Strips</h4>
+<h4 class="font-regular font-size-23 color_306396 margin-b-wide">Back Yard</h4>
+<h4 class="font-regular font-size-23 color_357E62 ">You can use several <br>
+well-distributed among <br>
+all your beds, trees, shrubs <br>
+and individual planting areas. <br>
+</h4>
+<p class="border_dafult_big_3"></p>
+<h4 class="font-regular font-size-23 color_597089">They make <b>Great Gifts</b> for <br>
+your gardening friends too <span class="font-style-italic">!</span></h4>
+<p class="border_dafult_big_3"></p>
+
+<div class="subtitle margin-t-widest">
+<h4
+class="display-flex align-items-center justify-content-center font-regular  font-size-30 color_4077ad">
+Buy More
+<span class="margin-x-small">
+<img src="https://www.silverfinger.com/eBay/smiley_bw.jpg" />
+</span>
+Save Big
+</h4>
+</div>
+<h4 class="font-regular font-size-23 color_b5c9de ct_with">with<br>
+<h4 class="font-regular font-size-37 color_4077ad ">QUANTITY PRICING</h4>
+<h4 class="font-regular font-size-40 color_b5c9de ct_with_plus">+<br>
+<h3 class="font-regular font-size-40 color_4077ad text-transform-uppercase font-style-italic margin-b-largest">FREE <br> SHIPPING!</h3>
 
 
+</section>
+</div>
+<!--Footbar-->
+<footer class="footbar primary text-center">
+<div class="footbar-text">
+<div class="subtitle margin-b-widest">
+<h4 class="font-regular font-size-18 color_3a4f61">HIGH QUALITY <span class="color_bbc9cd">•</span> GREAT VALUE</h4>
+</div>
+<div class="subtitle mt-200">
 
+<h4 class="font-regular font-size-13 color_230 font-style-italic">From your friends at</h4>
+<div class="image image-line-height new_class_image">
+<img class="image-responsive"
+src="https://www.silverfinger.com/eBay/silverfinger_logo_200x51_lighter.jpg" />
+</div>
+</div>
 
-
-                            <h4 class="font-regular font-style-italic font-size-23 color_5474A8">Perfect for</h4>
-                            <h4 class="font-bold font-size-23 color_555079 ">DIY Projects</h4>
-                            <h4 class="font-bold font-size-55 color_200"> • </h4>
-                            <h4 class="font-bold font-size-23 color_476294 margin-b-wide">A Wide Range <br>
-                                of Applications</h4>
-                            <h4 class="font-regular font-size-23 color_5474A8">throughout your</h4>
-
-                            <h4 class="font-bold font-size-23 color_555079 margin-b-widest">Garage, Garden <br>
-                                Home or Office</h4>
-
-                            
-                            <h4 class="font-regular font-size-23 color_5474A8">Just what <br> you need</h4>
-                            <h4 class="font-regular font-size-23 color_929AA5">to</h4>
-                            <h4 class="font-regular font-size-30 color_476294 margin_0000 ">Reinforce</h4>
-                            <h4 class="font-regular font-size-23 color_929AA5">and</h4>
-                            <h4 class="font-regular font-size-30 color_476294 margin_0000 ">Repair</h4>
-
-                            <h4 class="font-regular font-size-23 color_464264 margin-t-wide">Furniture</h4>
-                            <h4 class="font-regular font-size-23 color_476294">Tables </h4>
-                            <h4 class="font-regular font-size-23 color_464264 ">Chairs </h4>
-                            <h4 class="font-regular font-size-23 color_476294 border_bottom_hight_3">Benches </h4>
-
-                            <h4 class="font-regular font-size-23 color_464264 margin-t-wide">Shelving</h4>
-                            <h4 class="font-regular font-size-23 color_476294">Closets </h4>
-                            <h4 class="font-regular font-size-23 color_464264 ">Dressers </h4>
-                            <h4 class="font-regular font-size-23 color_476294 border_bottom_hight_3">Drawers </h4>
-
-                            <h4 class="font-regular font-size-23 color_464264 margin-t-wide ">Kitchen</h4>
-                            <h4 class="font-regular font-size-23 color_476294">Pantry </h4>
-                            <h4 class="font-regular font-size-23 color_464264 border_bottom_hight_3 ">Garage </h4>
-
-                            <h4 class="font-regular font-size-23 color_476294 margin-t-wide">Windows </h4>
-                            <h4 class="font-regular font-size-23 color_464264  ">Flower Boxes </h4>
-                            <h4 class="font-regular font-size-23 color_476294 border_bottom_hight_3 ">Patio Decks</h4>
-
-                            <h4 class="font-regular font-size-23 color_476294 margin-t-wide">Racks </h4>
-                            <h4 class="font-regular font-size-23 color_464264  ">Storage</h4>
-                            <h4 class="font-regular font-size-23 color_476294 margin-b-widest">Displays</h4>
-                            <h4 class="font-regular font-size-23 color_307AB1 margin-b-large">… and so much more</h4>
-
-                            <div class="image margin-b-wide ">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/LBrace_solo_grey-dark_h2omarked.jpg" />
-                            </div>
-
-                            <h4 class="font-bold font-size-23 color_464264  ">They Work Great</h4>
-                            <h4 class="font-regular font-size-23 color_747A83"> to</h4>
-                            <h4 class="font-regular font-size-23 color_5F686F margin-b-wide">Securely fix boards into
-                                position at<br>a perfectly squared right angle</h4>
-                            <h4 class="font-regular font-size-23 color_476294 margin-b-large">Hold together and shore up
-                                <br>wobbly components with <br>sturdy structural support
-                            </h4>
-
-                            <div class="image margin-b-wide ">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/LBrace_array_D_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-bold font-size-23 color_476294  ">Super Useful</h4>
-                            <h4 class="font-regular font-size-23 color_747A83"> to</h4>
-                            <h4 class="font-regular font-size-23 color_517DC4 ">Mend,
-                                Fasten<br>Rehabilitate<br>and<br>Secure</h4>
-                            <h4 class="font-regular font-size-23 color_476294">Fences</h4>
-                            <h4 class="font-regular font-size-23 color_517DC4 ">Loose Railings</h4>
-                            <h4 class="font-regular font-size-23 color_476294">Corners</h4>
-                            <h4 class="font-regular font-size-23 color_517DC4 margin-b-large">Stairs</h4>
-                            <div class="image margin-b-wide ">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/LBrace_mounted_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-size-23 color_476294 margin_0000">Tough</h4>
-                            <h4 class="font-regular font-size-23 color_407FAE margin_0000">Durable</h4>
-                            <h4 class="font-regular font-size-23 color_476294 border_bottom_hight_4 margin_0000">
-                                Dependable</h4>
-                            <h4 class="font-regular font-size-23 color_407FAE ">Quality Made</h4>
-                            <h4 class="font-regular font-size-23 color_476294 margin_0000">Reliable <br>Hardware</h4>
-
-                            <h4 class="font-regular font-size-23 color_4B4B4B border_bottom_hight_5">Strong and
-                                Substantial</h4>
-
-                            <h4 class="font-regular font-size-23 color_476294 margin-b-widest">Crafted to <br>go the
-                                distance<br>and hold up to a long<br>service life of rugged<br>use & abuse</h4>
-                            <div class="image margin-b-wide ">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/LBrace_solo_skyblue_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-size-23 color_476294 margin-b-widest "> 1.5mm <br>Gauge
-                                Thickness</h4>
-                            <h4 class="font-regular font-size-23 color_718A9F ">Zinc Plated</h4>
-                            <h4 class="font-regular font-size-23 color_5994C0 margin-b-wide ">Weather Resistant</h4>
-                            <h4 class="font-regular font-size-23 color_476294"> Heavy Duty</h4>
-                            <h4 class="font-medium font-style-italic font-size-30 color_393939"> SOLID STEEL</h4>
-                            <div class="image margin-b-small ">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/LBrace_dimensions_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-style-italic font-size-18 color_747A83 ">NOTE</h4>
-                            <h4 class="font-regular  font-size-18 color_747A83 margin-b-widest">Mounting screws not
-                                included. <br>Countersunk Screw holes allow fastener heads <br>to set flush and not
-                                protrude for a nice clean look.</h4>
-
-                            <div class="image margin-b-small ">
-                                <img class="image-responsive"
-                                    src="https://www.silverfinger.com/eBay/LBrace_array_B_h2omarked.jpg" />
-                            </div>
-                            <h4 class="font-regular font-size-30 color_4D689B margin-b-widest"> Easy to Install </h4>
-                            <h4 class="font-regular font-size-23 color_566FA0"> Mount flush into <br>interior corners
-                            </h4>
-                            <h4 class="font-regular font-size-23 color_747A83">or</h4>
-                            <h4 class="font-regular font-size-23 color_697FAA margin-b-widest"> onto exterior seams
-                                <br>as edge guards
-                            </h4>
-                            <div class="image margin-b-wide">
-                                <img class="image-responsive"
-                                    src="https://silverfinger.com/eBay/LBrace_caliper_h2omarked.jpg" />
-                            </div>
-
-                            <h4 class="font-regular font-size-30 color_4D689B ">Build stuff easily.</h4>
-                            <h4 class="font-bold font-size-60 color_200"> • </h4>
-
-                            <h4 class="font-regular font-size-23 color_407FAE margin-b-widest">They look and work great.
-                            </h4>
-                            <h4 class="font-regular font-size-32 color_55A8DD border_bottom_hight_6">Excellent Value
-                            </h4>
-
-                            <div class="subtitle margin-t-widest">
-                                <h4
-                                    class="display-flex align-items-center justify-content-center font-regular  font-size-32 color-octonary">
-                                    Buy More
-                                    <span class="margin-x-small">
-                                        <img src="https://www.silverfinger.com/eBay/smiley_bw.jpg" />
-                                    </span>
-                                    Save More
-                                </h4>
-                            </div>
-                            <h4 class="font-regular font-size-30 color-octonary margin-t-widest margin-b-large">Save Big
-                                <br> with<span class="font-bold"> Quantity Pricing</span><span
-                                    class="font-bold font-style-italic">!</span>
-                            </h4>
-
-                            <h4 class="font-regular font-size-35 color_59AADE">You’ll Get</h4>
-
-                            <h4 class="font-black font-size-35 color_135F91 margin_0000 ct_class_linehite">8</h4>
-                            <h4 class="font-regular font-size-20 color_135F91 margin_0000 ">or</h4>
-                            <h4 class="font-black font-size-35 color_135F91 margin_0000 ct_class_linehite">25</h4>
-                            <h4 class="font-regular  font-size-20 color_929AA5 margin-b-wide">Brackets</h4>
-
-                            <div class="image margin-b-wide line-height___1 ">
-                                <img class="image-responsive"
-                                    src="https://www.silverfinger.com/eBay/LBrace_8up_skyblue_h2omarked.jpg" />
-                                <br>
-                                <img class="image-responsive"
-                                    src="https://www.silverfinger.com/eBay/LBrace_25up_h2omarked.jpg" />
-                            </div>
-
-                            <div class="table_box margin-t-widest">
-                                <table style="width:100%">
-
-
-                                    <tr class="font-regular">
-                                        <td><span>Buy</span> <b>1</b> <span>@</span> $ 7.61 </td>
-                                        <td><span>=</span></td>
-                                        <td><span>only</span> $ 7.61 <span>each</span></td>
-                                    </tr>
-
-                                    <tr class="font-regular">
-                                        <td><span>Buy</span> <b>3</b> <span>@</span> $ 15.31 </td>
-                                        <td><span>=</span></td>
-                                        <td><span>only</span> $ 5.03 <span>each</span></td>
-                                    </tr>
-
-                                    <tr class="font-regular">
-                                        <td><span>Buy</span> <b>5</b> <span>@</span> $ 18.73 </td>
-                                        <td><span>=</span></td>
-                                        <td><span>only</span> $ 3.75 <span>each</span></td>
-                                    </tr>
-
-
-                                    <tr class="font-regular">
-                                        <td><span>Buy</span> <b>7</b> <span>@</span> $ 21.81 </td>
-                                        <td><span>=</span></td>
-                                        <td><span>only</span> $ <b>3.11 each </b><span
-                                                class="font-style-italic">!</span></td>
-                                    </tr>
-                                </table>
-                            </div>
-
-
-                    </section>
-                </div>
-                <!--Footbar-->
-                <footer class="footbar primary text-center">
-                    <div class="footbar-text">
-                        <div class="subtitle margin-b-widest">
-                            <h3
-                                class="font-regular font-size-40 color_2AD text-transform-uppercase font-style-italic margin-b-largest">
-                                FREE SHIPPING!</h3>
-                            <h4 class="font-regular font-size-18 color-grey ">HIGH QUALITY • GREAT VALUE</h4>
-                        </div>
-                        <div class="subtitle mt-200">
-
-                            <h4 class="font-regular font-size-13 color_230 font-style-italic">From your friends at</h4>
-                            <div class="image image-line-height new_class_image">
-                                <img class="image-responsive"
-                                    src="https://www.silverfinger.com/eBay/silverfinger_logo_200x51_lighter.jpg" />
-                            </div>
-                        </div>
-
-                    </div>
-                </footer>
-            </div>
-        </div>
+</div>
+</footer>
+</div>
+</div>
 </body>
 
 </html>

@@ -8,7 +8,8 @@ body,
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .landingpage-listing {
@@ -523,6 +524,8 @@ p {
     border-bottom: 4px solid #CFD9E9;
     display: inherit;
     padding-bottom: 13px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
     margin: auto;
@@ -532,6 +535,8 @@ p {
     border-bottom: 4px solid #CFD9E9;
     display: inherit;
     padding-bottom: 6px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
     margin: auto;
@@ -545,6 +550,8 @@ p {
     border-bottom: 4px solid #CFD9E9;
     display: inherit;
     padding-bottom: 4px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
     margin: auto;
@@ -792,8 +799,37 @@ p {
 .landingpage-listing .color_455421 {
     color: #455421;
 }
+.landingpage-listing .color_306396 {
+    color: #306396;
+}
+.landingpage-listing .color_3a4857 {
+    color: #3a4857;
+}
+.landingpage-listing .color_427630 {
+    color: #427630;
+}
+.landingpage-listing .color_4077ad {
+    color: #4077ad;
+}
+.landingpage-listing .color_bbc9cd {
+    color: #bbc9cd;
+}
+.landingpage-listing .color_3a4f61 {
+    color: #3a4f61;
+}
+.landingpage-listing .color_b5c9de {
+    color: #b5c9de;
+}
 
-
+.ct_with {
+    margin: 0;
+    line-height: 22px;
+}
+.ct_with_plus {
+    margin: 0;
+    line-height: 35px;
+    font-size: 58pt !important;
+}
 
 
 
@@ -807,7 +843,13 @@ p {
     padding-bottom: 15px;
 }
 
-
+.landingpage-listing .color_200dd {
+    color: #cedadd;
+    margin: 0;
+    font-size: 79px;
+    line-height: .6;
+    padding-bottom: 15px;
+}
 
 
 
@@ -838,10 +880,24 @@ p {
     margin-bottom: 20px;
 }
 
+.border_dafult_big_2 {
+    border-bottom: 5px solid #cedadd;
+    padding-bottom: 10px;
+    width: 526px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
 
 
-
-
+.border_dafult_big_3 {
+    border-bottom: 3px solid #cedadd;
+    padding-bottom: 10px;
+    width: 410px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
 
 
 
@@ -1155,6 +1211,9 @@ h2.mb_0_0_0_t {
     .landingpage-listing .font-size-35 {
         font-size: 35pt;
     }
+    .landingpage-listing .font-size-37 {
+    font-size: 27pt;
+}
 
     .landingpage-listing .font-size-40 {
         font-size: 26pt;
@@ -1332,4 +1391,3 @@ background-color: transparent;
     text-align: left;
     width: 6.5rem;
 }
-
